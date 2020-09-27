@@ -20,11 +20,12 @@ body {
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: rgb(217, 238, 202);
+    position: fixed;
 }
 
 
 .title a {
-    position: absolute;
+    position: fixed;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 50px;
     left: 50%;
