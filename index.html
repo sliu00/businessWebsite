@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        <title>BEAUTY BAR</title>
+    </head>
+    <!-- Internal Stylesheet -->
+    <style>
+        .homeSection {
+            transform: translateX(37em) translateY(10em);
+            background-color: rgba(216, 172, 142, 0.712);
+            width: 50%;
+            height: 350px;
+            border-radius: 15px;
+        }
+        .homeImg {
+            transform: translateY(-5em);
+        }
+
+        #img1 {
+            width: 500px;
+            z-index: 1;
+            transform: translateY(8.5em) translateX(2em);
+            border-radius: 15px;
+            border: 10px solid rgb(216, 171, 142);
+          
+        }
+        
+        #img2 {
+            width: 280px;
+            transform: translateY(17em) translateX(4.1em);
+            border-radius: 15px;
+            border: 10px solid rgb(216, 171, 142);
+
+        }
+
+        #img4 {
+            width: 280px;
+            transform: translateY(17em) translateX(6em);
+            border-radius: 15px;
+            border: 10px solid rgb(216, 171, 142);
+        }
+
+        #beautyBar {
+            width: 700px;
+            transform: translateX(-40em) translateY(-6em);
+            z-index: 1;
+        }
+        
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="page">
+            <!-- NAVIGATION STARTS -->
+                <div class="navigation">
+                    <div class="title">
+                        <span><a href="index.html">BEAUTY BAR</a></span>
+                    </div>
+
+                    <div id="mySidebar" class="sidebar">
+                        <button class="close-btn" onclick="closeNav()">x</button>
+                        <a href="index.html">Home</a> <br>
+                        <a href="services.html">Services</a> <br>
+                        <a href="contact.html">Contact</a> <br>
+                    </div>
+                    
+                    <div id="openNav">
+                        <button class="open-btn" onclick="openNav()">☰</button>
+                    </div> 
+                </div>
+            <!-- NAVIGATION ENDS -->
+            <div class="homeSection">
+                <img id="beautyBar" src="images/beautybar.png">
+            </div>
+                <div class="homeImg">
+                    <img id="img1" src="images/nail.jpg">
+                    <img id="img2" src="images/nail4.jpg">
+                    <img id="img4" src="images/nail2.jpg">
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+    <script src="nav.js"></script>
+</html>

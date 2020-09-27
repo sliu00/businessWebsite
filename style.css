@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: rgba(240, 228, 228, 0.788);
+    height: 70em;
+    width: 100%;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70em;
+}
+
+.navigation {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(212, 230, 201);
+}
+
+
+.title a {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 50px;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4.5px;
+    color: rgb(216, 171, 142);
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(224, 255, 218);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 20px;
+}
+  
+.sidebar a {
+    padding: 30px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(223, 162, 139);
+    display: inline-block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 4px;
+    color: rgb(216, 171, 142);
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.close-btn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: rgb(216, 171, 142);
+}

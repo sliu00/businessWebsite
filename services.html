@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        
+
+    </head>
+    <!-- Internal Stylesheet -->
+    <style>
+        .section1 {
+            transform: translateY(9.5em);
+            background-color: rgba(212, 230, 201, 0.603);
+            height: 25em;
+            width: 45%;
+            margin-left: 40px;
+            padding-top: 25px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+        #services {
+            font-size: 28px;
+            color: rgb(216, 171, 142);
+            margin-top: 2em;
+            font-family: 'Josefin Sans', sans-serif;
+            letter-spacing: 3px;
+        }
+
+    </style>
+    <body>
+        <div class="page">
+        <!-- NAVIGATION STARTS -->
+            <div class="navigation">
+                <div class="title">
+                    <span><a href="index.html">BEAUTY BAR</a></span>
+                </div>
+
+                <div id="mySidebar" class="sidebar">
+                    <button class="close-btn" onclick="closeNav()">x</button>
+                    <a href="index.html">Home</a> <br>
+                    <a href="services.html">Services</a> <br>
+                    <a href="contact.html">Contact</a> <br>
+                </div>
+                
+                <div id="openNav">
+                    <button class="open-btn" onclick="openNav()">☰</button>
+                </div> 
+            </div>
+        <!-- NAVIGATION ENDS -->
+            <div class="section1">
+                <text id="services">SERVCIES</text>
+            </div>
+        </div>
+    </body>
+    <script src="nav.js"></script>
+</html>
