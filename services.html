@@ -9,23 +9,46 @@
     <style>
         .section1 {
             transform: translateY(9.5em);
-            background-color: rgba(212, 230, 201, 0.603);
-            height: 25em;
+            background-color: rgba(221, 144, 109, 0.616);
+            height: 40em;
             width: 45%;
             margin-left: 40px;
             padding-top: 25px;
             text-align: center;
-            border-radius: 20px;
+            border-radius: 10px;
         }
         
         #services {
-            font-size: 28px;
-            color: rgb(216, 171, 142);
+            font-size: 25px;
+            color: rgb(255, 255, 255);
             margin-top: 2em;
             font-family: 'Roboto', sans-serif;
-            letter-spacing: 3px;
+            font-weight: 100;
+            letter-spacing: 7px;
         }
 
+        ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        ul li{
+            font-family: 'Roboto', sans-serif;
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 4px;
+            font-variant: small-caps;
+            padding-top: 10px;
+        }
+
+        #mani > li, #pedi > li {
+            font-size: 18px;
+            padding-top: 8px;
+        }
+        
+        #prices {
+            text-align: right;
+        }
     </style>
     <body>
         <div class="page">
@@ -48,7 +71,28 @@
             </div>
         <!-- NAVIGATION ENDS -->
             <div class="section1">
-                <text id="services">SERVCIES</text>
+                <text id="services">OUR SERVCIES</text>
+                <ul>
+                    <li>manicures</li>
+                        <ul id="mani">
+                            <li>classic manicure ($16)</li>
+                            <li>gel manicures ($32)</li>
+                            <li>dip powder ($40)</li>
+                            <li>fullset acrylic gel ($51)</li>
+                            <li>fullset acrylic classic ($39)</li>
+                            <li>soak off ($15)</li>
+                        </ul>
+                    <li>pedicures</li>
+                        <ul id="pedi">
+                            <li>classic pedicure ($30)</li>
+                            <li>gel pedicure ($45)</li>
+                            <li>dip powder ($40)</li>
+                            <li>fullset acrylic gel ($51)</li>
+                            <li>fullset acrylic classic ($39)</li>
+                            <li>soak off ($15)</li>
+                        </ul>
+                    <li>massages</li>
+                </ul>
             </div>
         </div>
     </body>
