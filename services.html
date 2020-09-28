@@ -5,18 +5,21 @@
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>    
     </head>
     <!-- Internal Stylesheet -->
     <style>
         .section1 {
             transform: translateY(25vh);
             background-color: rgba(221, 144, 109, 0.8);
-            height: 100%;
+            height: 125vh;
             width: 600px;
             max-width: 80%;
             float: left;
             margin-left: 40px;
             padding-top: 25px;
+            padding-bottom: 25px;
             text-align: center;
             border-radius: 10px;
             position: absolute;
@@ -46,9 +49,9 @@
             padding-top: 10px;
         }
 
-        #mani > li, #pedi > li {
+        #mani > li, #pedi > li, #lash > li, #massage > li{
             font-size: 20px;
-            padding-top: 8px;
+            padding-top: 10px;
         }
         
         #prices {
@@ -57,7 +60,8 @@
 
         #background {
             width: 100%;
-            margin-top: 0%;
+            height: 70%;
+            margin-bottom: 5%;
         }
     </style>
     <body>
@@ -101,14 +105,38 @@
                             <li>fullset acrylic classic ($39)</li>
                             <li>soak off ($15)</li>
                         </ul>
-                    <li>massages</li>
+                    <li>massage</li>
+                        <ul id="massage">
+                            <li> hot stone massage (1 hr - $139)</li>
+                            <li>aromatherapy massage (1 hr $119)</li>
+                            <li> deep tissue massage (1 hr - $139)</li>
+                        </ul>
+                    <li>lash extensions and lifts</li>
+                        <ul id="lash">
+                            <li>classic lash ($99)</li>
+                            <li>deluxe Volume ($139)</li>
+                            <li>lash lift ($69)</li>
+                        </ul>
                 </ul>
             </div>
             <div>
-                <img id="background" src="images/pedicure.jpg">
-                <img id="background" src="images/pedi.jpg">
+                <img id="background" src="images/massage.jpg">
             </div>
         </div>
+        <!-- FOOTER BEGIN -->
+        <div class="footer">
+            <div class="icon-list">
+                <span>
+                    <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+                    <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+                </span>
+                
+            </div>
+            <span>info@beautybar.com</span> 
+            <span> | </span>
+            <span>617.123.4567</span> 
+        </div>
+        <!-- FOOTER ENDS -->
     </body>
     <script src="nav.js"></script>
 </html>

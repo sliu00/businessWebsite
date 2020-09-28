@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        
-
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     </head>
+    <!-- Internal stylesheet-->
+    <style>
+        .contactTitle {
+            font-variant: small-caps;
+            font-size: 32px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 7px;
+            transform: translateX(38vw) translateY(28vh);
+            position: absolute;
+            color: rgba(221, 144, 109, 0.8);
+        }
+    </style>
 
     <body>
         <div class="page">
@@ -25,8 +40,22 @@
                     <button class="open-btn" onclick="openNav()">☰</button>
                 </div> 
             </div>
-        <!-- NAVIGATION ENDS -->
+            <!--NAVIGATION ENDS-->
+
+            <div>
+                <div class="contactTitle">contact & info</div>
+                <div>
+                    beauty bar hours
+                    <ul>
+                        <li>monday - thursday 10pm-7pm</li>
+                        <li>friday 10am-5pm</li>
+                        <li>saturday 9am-6pm</li>
+                        <li>sunday closed</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
     </body>
     <script src="nav.js"></script>
 </html>

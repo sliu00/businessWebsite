@@ -3,7 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        <title>BEAUTY BAR</title>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">    
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>    
+        <title>BEAUTY BAR</title>
     </head>
     <!-- Internal Stylesheet -->
     <style>
@@ -58,8 +61,6 @@
             transform: translateX(-50vw) translateY(-13vh);
             z-index: 1;
         }
-        
-
     </style>
     <body>
         <div class="container">
@@ -95,7 +96,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- FOOTER BEGIN -->
+            <div class="footer">
+                <div class="icon-list">
+                    <span>
+                        <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+                        <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+               
+                    </span>
+                    
+                </div>
+                <span>info@beautybar.com</span> 
+                <span> | </span>
+                <span>617.123.4567</span> 
+            </div>
+            <!-- FOOTER ENDS -->
     </body>
     <script src="nav.js"></script>
 </html>
