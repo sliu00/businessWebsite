@@ -50,10 +50,39 @@
         #background {
             width: 40%;
         }
+
+        .address {
+            float: right;
+        }
+        
+        .address li {
+            font-size: 20px;
+            list-style: none;
+            transform: translateY(-30vh) translateX(5.5vw);
+            color: rgba(0, 0, 0);
+            padding-top: 1vh;
+            font-family: 'Work Sans', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .address li a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+        }
+
+        #info {
+            float: right;
+            transform: translateX(3vw) translateY(-35vh);
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 5px;
+            color: rgba(221, 144, 109, 0.8);
+        }
+
     </style>
 
-    <body>
-        <div class="page">
+    <body style="height: 600px;">
         <!-- NAVIGATION STARTS -->
             <div class="navigation">
                 <div class="title">
@@ -72,12 +101,12 @@
                 </div> 
             </div>
             <!--NAVIGATION ENDS-->
+          <div style="height: 58em;">
             <div>
                 <img id="background" src="images/salon.jpg">
             </div>
             <div class="contact">
                 <div class="contactTitle">contact & info</div>
-                <div>
                     <text>- beauty bar hours -</text>
                     <ul>
                         <li>monday - thursday</li>
@@ -91,10 +120,31 @@
                         <li>9am-6pm</li>
                         <li>closed</li>
                     </ul>
-                </div>
+            </div>
+            <div class="address">
+                <text id="info">SEE YOU SOON!</text>
+                <ul>
+                    <li> </li>
+                    <li> &nbsp; &nbsp; &nbsp; &nbsp; 210 PACKARD AVENUE</li>
+                    <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MEDFORD, MA 02155</li>
+                    <li><a href="mailto:info@beautybar.com">EMAIL: INFO@BEAUTYBAR.COM</a></li>
+                    <li><a href="tel:6171234567">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PHONE: (617) 123 4567</a></li>
+                </ul>
             </div>
         </div>
-        
+        <!-- FOOTER BEGIN -->
+        <div class="footer">
+            <div style="transform: translateX(10vw);">
+                <div class="icon-list">
+                    <span>
+                        <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+                        <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+                    </span>
+                </div>
+                <span>est. 2020</span> 
+             </div>
+        </div>
+        <!-- FOOTER ENDS -->
     </body>
     <script src="nav.js"></script>
 </html>
