@@ -5,19 +5,50 @@
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
         <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     </head>
     <!-- Internal stylesheet-->
     <style>
-        .contactTitle {
+        .contact {
+            float: right;
+        }
+        .contactTitle, .contact text {
             font-variant: small-caps;
             font-size: 32px;
             font-family: 'Roboto', sans-serif;
             letter-spacing: 7px;
-            transform: translateX(38vw) translateY(28vh);
+            transform: translateX(-17vw) translateY(-85vh);
             position: absolute;
             color: rgba(221, 144, 109, 0.8);
+        }
+
+        .contact li {
+            transform: translateX(-30vw) translateY(-73vh);
+            list-style: none;
+            font-size: 2em;
+            font-variant: small-caps;
+            padding: 5px;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .contact text {
+            font-size: 20px;
+            padding-top: 4vh;
+            padding-left: 3.5vw;
+            letter-spacing: 2px;
+        }
+        
+
+        #hours {
+            transform: translateX(30vw) translateY(-29vh);
+            font-family: 'Roboto', sans-serif;
+            color: rgba(221, 144, 109, 0.8);
+        }
+        
+        #background {
+            width: 40%;
         }
     </style>
 
@@ -32,7 +63,7 @@
                 <div id="mySidebar" class="sidebar">
                     <button class="close-btn" onclick="closeNav()">x</button>
                     <a href="index.html">Home</a> <br>
-                    <a href="services.html">Serives</a> <br>
+                    <a href="services.html">Services</a> <br>
                     <a href="contact.html">Contact</a> <br>
                 </div>
                 
@@ -41,16 +72,24 @@
                 </div> 
             </div>
             <!--NAVIGATION ENDS-->
-
             <div>
+                <img id="background" src="images/salon.jpg">
+            </div>
+            <div class="contact">
                 <div class="contactTitle">contact & info</div>
                 <div>
-                    beauty bar hours
+                    <text>- beauty bar hours -</text>
                     <ul>
-                        <li>monday - thursday 10pm-7pm</li>
-                        <li>friday 10am-5pm</li>
-                        <li>saturday 9am-6pm</li>
-                        <li>sunday closed</li>
+                        <li>monday - thursday</li>
+                        <li>friday</li>
+                        <li>saturday</li>
+                        <li>sunday</li>
+                    </ul>
+                    <ul id="hours">
+                        <li>10pm-7pm</li>
+                        <li>10am-5pm</li>
+                        <li>9am-6pm</li>
+                        <li>closed</li>
                     </ul>
                 </div>
             </div>
